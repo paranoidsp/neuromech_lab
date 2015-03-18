@@ -1,0 +1,9 @@
+function varData = getvariance( mudata )
+%getvariance Outputs a variance cell
+varData = zeros(30,3)
+for i=1:30
+    mdata = mudata{i};
+    varData(i,:) = var(mdata);
+    varData(i,4) = varData(i,1) + varData(i,2);
+end
+

@@ -1,0 +1,4 @@
+% Here we plot all the data after offset correction
+figure
+
+plot(
